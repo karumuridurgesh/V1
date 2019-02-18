@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1521329-4A8B-44E7-9199-F6B4DF1B8068}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GTKABWLibrary</RootNamespace>
+    <AssemblyName>GTKABWLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>..\..\Dev_References\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLogicLayer\ABWCustomerBLL.cs" />
+    <Compile Include="BusinessLogicLayer\ABWListSummaryBLL.cs" />
+    <Compile Include="BusinessLogicLayer\AbwPoRcptBLL.cs" />
+    <Compile Include="BusinessLogicLayer\ATFAdjustmentBLL.cs" />
+    <Compile Include="BusinessLogicLayer\ATFReceiptBLL.cs" />
+    <Compile Include="BusinessLogicLayer\LocationBLL.cs" />
+    <Compile Include="BusinessLogicLayer\ManualAdjustmentBLL.cs" />
+    <Compile Include="BusinessLogicLayer\ManualATFSalesBLL.cs" />
+    <Compile Include="BusinessLogicLayer\ReportBLL.cs" />
+    <Compile Include="BusinessLogicLayer\ReWareHouseEntryBLL.cs" />
+    <Compile Include="BusinessLogicLayer\T6043BLL.cs" />
+    <Compile Include="BusinessLogicLayer\T7501BLL.cs" />
+    <Compile Include="BusinessLogicLayer\T7512BLL.cs" />
+    <Compile Include="BusinessObjects\ABWConstValues.cs" />
+    <Compile Include="BusinessObjects\ABWCustomer.cs" />
+    <Compile Include="BusinessObjects\ABWListCodeBO.cs" />
+    <Compile Include="BusinessObjects\AbwPoRcpt.cs" />
+    <Compile Include="BusinessObjects\ATFAdjustmentBO.cs" />
+    <Compile Include="BusinessObjects\ATFReceiptBo.cs" />
+    <Compile Include="BusinessObjects\LocationBO.cs" />
+    <Compile Include="BusinessObjects\ManualAdjustmentBO.cs" />
+    <Compile Include="BusinessObjects\ManualATFSalesBO.cs" />
+    <Compile Include="BusinessObjects\ReWareHouseBO.cs" />
+    <Compile Include="BusinessObjects\T6043BO.cs" />
+    <Compile Include="BusinessObjects\T7501BO.cs" />
+    <Compile Include="BusinessObjects\T7512BO.cs" />
+    <Compile Include="DataAccessLayer\ABWCustomerDAL.cs" />
+    <Compile Include="DataAccessLayer\ABWListSummaryDAL.cs" />
+    <Compile Include="DataAccessLayer\AbwPORcptDAL.cs" />
+    <Compile Include="DataAccessLayer\ATFAdjustmentDAL.cs" />
+    <Compile Include="DataAccessLayer\ATFRcptDAL.cs" />
+    <Compile Include="DataAccessLayer\GTKGlobalValues.cs" />
+    <Compile Include="DataAccessLayer\LocationDAL.cs" />
+    <Compile Include="DataAccessLayer\ManualAdjustmentDAL.cs" />
+    <Compile Include="DataAccessLayer\ManualATFSalesDAL.cs" />
+    <Compile Include="DataAccessLayer\ReportDAL.cs" />
+    <Compile Include="DataAccessLayer\ReWareHouseEntryDAL.cs" />
+    <Compile Include="DataAccessLayer\T6043DAL.cs" />
+    <Compile Include="DataAccessLayer\T7501DAL.cs" />
+    <Compile Include="DataAccessLayer\T7512DAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GTKUtilites\GTKUtilites.csproj">
+      <Project>{7232FD01-E611-4914-B8C3-5377E48DF5BC}</Project>
+      <Name>GTKUtilites</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
