@@ -1,0 +1,2 @@
+F:\Workspace\USTFS\GTKONNECT_V1_VS2017\Accounting\obj\Debug\Accounting.csprojAssemblyReference.cache
+F:\Workspace\USTFS\GTKONNECT_V1_VS2017\Accounting\obj\Debug\Accounting.csproj.CoreCompileInputs.cache
